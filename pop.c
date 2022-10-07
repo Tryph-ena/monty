@@ -1,13 +1,10 @@
 #include "monty.h"
-#include "extern.h"
-
 /**
  * f_pop - prints the top
  * @head: stack head
  * @counter: line_number
  * Return: no return
  */
-bus_t bus;
 void f_pop(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
@@ -23,5 +20,4 @@ void f_pop(stack_t **head, unsigned int counter)
 	h = *head;
 	*head = h->next;
 	free(h);
-
 }
